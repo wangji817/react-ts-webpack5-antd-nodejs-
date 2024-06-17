@@ -1,0 +1,5 @@
+@import '@/asset/common.scss';
+
+.Title {
+    @include title;
+}

@@ -1,0 +1,28 @@
+@import '@/asset/common.scss';
+
+.Lister {
+    padding: 0 2rem;
+
+    .chapter-name {
+        @include name;
+    }
+
+    .chapter-description {
+        .chapter-desc {
+            @include desc;
+        }
+
+        .chapter-flex {
+            @include flex;
+
+            .hot {
+                @include statisticHot;
+            }
+
+            .normal {
+                margin-left: 1.3333rem;
+                @include statisticAuthor;
+            }
+        }
+    }
+}

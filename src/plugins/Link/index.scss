@@ -1,0 +1,5 @@
+@import '@/asset/common.scss';
+
+.Link {
+    @include inlineLink;
+}

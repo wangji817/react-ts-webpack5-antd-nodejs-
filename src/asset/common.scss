@@ -1,0 +1,55 @@
+$whiteColor:#fff;
+$blackColor:#000;
+$redColor:#f00;
+$greyColor:rgba(#000, 0.6);
+
+
+@mixin title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: $whiteColor;
+    text-align: center;
+}
+
+@mixin name {
+    font-size: 1rem;
+    color: $blackColor;
+    font-weight: 600;
+}
+
+@mixin desc {
+    font-size: 0.9333rem;
+    color: $greyColor;
+    font-weight: 500;
+}
+
+@mixin font14 {
+    font-size: .8rem;
+    color: $greyColor;
+    font-weight: 500;
+}
+
+@mixin statisticHot {
+    .ant-statistic-content {
+        font-size: .8rem;
+        color: $redColor;
+        font-weight: 500;
+    }
+}
+
+@mixin statisticAuthor {
+    .ant-statistic-content {
+        font-size: .8rem;
+        color: $greyColor;
+        font-weight: 500;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    display: -webkit-flex;
+}
+
+@mixin inlineLink {
+    display: inline-block;
+}
