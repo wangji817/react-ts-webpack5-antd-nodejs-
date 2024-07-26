@@ -22,6 +22,16 @@ app.get('/getList', async (req, res) => {
     res.send(new_data);
 });
 
+// 设置视图引擎并指定视图目录
+app.set('view engine', 'ejs'); // 假设使用的是html模板引擎
+app.set('views', __dirname + '/dist');
+// 设置静态资源路径
+app.use(express.static('dist'));
+app.get('/', async (req, res) => {
+    // 使用res.render方法渲染视图，并传递数据    
+    res.render('index', null);
+});
+
 // 启动服务
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

@@ -22,7 +22,7 @@ let pageNo = Number(fs.readFileSync(__dirname + "/pageNo.txt"));//568305-上一�
 const pageSize = 20;
 const getJianShu = async () => {
     fs.writeFileSync('./pageNo.txt', `${pageNo}`, 'utf8');
-    if (pageNo >= 1000000000) {
+    if (pageNo >= 100000000) {
         console.log(`数据已爬完`)
         return;
     }
